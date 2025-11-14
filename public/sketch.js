@@ -1,11 +1,11 @@
-const { Socket } = require("socket.io");
+
 
 var socket;
 
 function setup() {
     createCanvas(600, 600);
     background(51);
-Socket = io();
+socket = io();
 
     // socket = io.connect('http://localhost:3000');
     socket.on('mouse', newDrawing);
